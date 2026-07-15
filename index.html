@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="William Henderson Real Estate — luxury homes, condos, rentals and commercial real estate throughout South Florida.">
+  <meta name="description" content="William Henderson Real Estate — luxury homes across South Florida.">
   <title>William Henderson Real Estate | Luxury Homes Across South Florida</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,194 +11,143 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header data-header></header>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        William Henderson
+        <span>South Florida Real Estate</span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="buyers.html">Buyers</a>
+        <a href="sellers.html">Sellers</a>
+        <a href="rentals.html">Rentals</a>
+        <a href="commercial.html">Commercial</a>
+        <a href="neighborhoods.html">Neighborhoods</a>
+        <a href="buildings.html">Luxury Buildings</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </div>
+  </header>
 
   <main>
     <section class="hero">
+      <div class="hero-overlay"></div>
       <div class="container hero-content">
-        <span class="eyebrow">Miami • Broward • Palm Beach • Florida Keys</span>
-        <h1>Luxury Homes Across South Florida.</h1>
-        <p>Personal representation for buyers, sellers, investors, luxury renters and commercial clients throughout South Florida’s most desirable communities.</p>
+        <span class="eyebrow">Miami-Dade · Broward · Palm Beach · Florida Keys</span>
+
+        <h1>Luxury Homes<br>Across South Florida.</h1>
+
+        <p>
+          Discover exceptional homes, waterfront residences, luxury rentals,
+          investment opportunities and commercial properties throughout South Florida.
+        </p>
+
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#properties">Search Properties</a>
-          <a class="btn btn-secondary" href="sellers.html">What’s My Home Worth?</a>
+          <a class="btn btn-gold" href="#property-search">Search Properties</a>
+          <a class="btn btn-outline" href="sellers.html">What's My Home Worth?</a>
         </div>
       </div>
     </section>
 
-    <div class="container">
-      <section class="search-panel" aria-label="Property search">
-        <form class="search-grid" id="homeSearch">
+    <section class="search-section" id="property-search">
+      <div class="container">
+        <form class="search-panel" id="homeSearch">
           <div class="field">
             <label for="area">City / Neighborhood</label>
             <select id="area" name="area">
               <option value="">All South Florida</option>
               <optgroup label="Miami-Dade">
-                <option>Miami Beach</option><option>South Beach</option><option>Brickell</option>
-                <option>Downtown Miami</option><option>Edgewater</option><option>Coconut Grove</option>
-                <option>Coral Gables</option><option>Key Biscayne</option><option>Sunny Isles Beach</option>
-                <option>Surfside</option><option>Bal Harbour</option><option>Aventura</option>
-                <option>Doral</option><option>Pinecrest</option><option>Palmetto Bay</option>
+                <option>Miami Beach</option>
+                <option>South Beach</option>
+                <option>Brickell</option>
+                <option>Downtown Miami</option>
+                <option>Edgewater</option>
+                <option>Coconut Grove</option>
+                <option>Coral Gables</option>
+                <option>Key Biscayne</option>
+                <option>Sunny Isles Beach</option>
+                <option>Bal Harbour</option>
+                <option>Aventura</option>
               </optgroup>
               <optgroup label="Broward">
-                <option>Fort Lauderdale</option><option>Las Olas</option><option>Hollywood</option>
-                <option>Dania Beach</option><option>Hallandale Beach</option><option>Weston</option>
-                <option>Plantation</option><option>Coral Springs</option><option>Deerfield Beach</option>
+                <option>Fort Lauderdale</option>
+                <option>Hollywood</option>
+                <option>Dania Beach</option>
+                <option>Hallandale Beach</option>
+                <option>Weston</option>
               </optgroup>
               <optgroup label="Palm Beach">
-                <option>Palm Beach</option><option>West Palm Beach</option><option>Boca Raton</option>
-                <option>Delray Beach</option><option>Jupiter</option><option>Palm Beach Gardens</option>
-                <option>Wellington</option>
+                <option>Palm Beach</option>
+                <option>West Palm Beach</option>
+                <option>Boca Raton</option>
+                <option>Delray Beach</option>
+                <option>Jupiter</option>
               </optgroup>
               <optgroup label="Florida Keys">
-                <option>Key Largo</option><option>Islamorada</option><option>Marathon</option>
-                <option>Big Pine Key</option><option>Key West</option>
+                <option>Key Largo</option>
+                <option>Islamorada</option>
+                <option>Marathon</option>
+                <option>Key West</option>
               </optgroup>
             </select>
           </div>
+
           <div class="field">
             <label for="type">Property Type</label>
             <select id="type" name="type">
               <option value="">All Types</option>
-              <option>Condo</option><option>Single Family</option><option>Rental</option><option>Commercial</option>
+              <option>Condo</option>
+              <option>Single Family</option>
+              <option>Townhome</option>
+              <option>Rental</option>
+              <option>Commercial</option>
             </select>
           </div>
+
           <div class="field">
-            <label for="maxPrice">Maximum Price</label>
-            <select id="maxPrice" name="maxPrice">
+            <label for="price">Maximum Price</label>
+            <select id="price" name="price">
               <option value="">No Maximum</option>
-              <option value="500000">$500,000</option>
-              <option value="1000000">$1,000,000</option>
-              <option value="2500000">$2,500,000</option>
-              <option value="5000000">$5,000,000</option>
-              <option value="10000000">$10,000,000</option>
+              <option>$500,000</option>
+              <option>$1,000,000</option>
+              <option>$2,500,000</option>
+              <option>$5,000,000</option>
+              <option>$10,000,000+</option>
             </select>
           </div>
+
           <div class="field">
             <label for="beds">Bedrooms</label>
             <select id="beds" name="beds">
-              <option value="">Any</option><option value="1">1+</option><option value="2">2+</option>
-              <option value="3">3+</option><option value="4">4+</option><option value="5">5+</option>
+              <option value="">Any</option>
+              <option>1+</option>
+              <option>2+</option>
+              <option>3+</option>
+              <option>4+</option>
+              <option>5+</option>
             </select>
           </div>
-          <button class="btn btn-dark" type="submit">Search</button>
+
+          <button class="search-button" type="submit">Search</button>
         </form>
-      </section>
-    </div>
+      </div>
+    </section>
 
-    <section class="section">
+    <section class="preview-section">
       <div class="container">
-        <div class="section-title">
-          <span class="eyebrow">Explore South Florida</span>
-          <h2>Distinctive communities. Exceptional lifestyles.</h2>
-          <p>Explore four of South Florida’s most recognizable luxury destinations.</p>
-        </div>
-        <div class="area-grid">
-          <a class="area-card" href="neighborhoods.html#miami-beach" style="background-image:url('https://images.unsplash.com/photo-1535498730771-e735b998cd64?auto=format&fit=crop&w=1000&q=85')">
-            <div><h3>Miami Beach</h3><p>Oceanfront living, architecture and world-class culture.</p></div>
-          </a>
-          <a class="area-card" href="neighborhoods.html#brickell" style="background-image:url('https://images.unsplash.com/photo-1589083130544-0d6a2926e519?auto=format&fit=crop&w=1000&q=85')">
-            <div><h3>Brickell</h3><p>High-rise luxury in Miami’s financial and dining district.</p></div>
-          </a>
-          <a class="area-card" href="neighborhoods.html#coconut-grove" style="background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=85')">
-            <div><h3>Coconut Grove</h3><p>Leafy streets, waterfront residences and village charm.</p></div>
-          </a>
-          <a class="area-card" href="neighborhoods.html#palm-beach" style="background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=85')">
-            <div><h3>Palm Beach</h3><p>Historic estates, oceanfront elegance and refined living.</p></div>
-          </a>
-        </div>
-        <div class="center-action"><a class="text-link" href="neighborhoods.html">View all cities and neighborhoods →</a></div>
-      </div>
-    </section>
-
-    <section class="section alt">
-      <div class="container">
-        <div class="section-title split-heading">
-          <div>
-            <span class="eyebrow">Signature Residences</span>
-            <h2>Featured luxury buildings.</h2>
-          </div>
-          <a class="text-link" href="buildings.html">Explore all buildings →</a>
-        </div>
-        <div class="building-grid">
-          <a class="building-card" href="buildings.html#faena">
-            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1000&q=85" alt="Luxury oceanfront residential tower">
-            <div class="card-body"><span class="tag">Miami Beach</span><h3>Faena House</h3><p>Oceanfront residences on Millionaire’s Row.</p></div>
-          </a>
-          <a class="building-card" href="buildings.html#aston-martin">
-            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=85" alt="Modern luxury tower">
-            <div class="card-body"><span class="tag">Downtown Miami</span><h3>Aston Martin Residences</h3><p>Automotive design translated into waterfront living.</p></div>
-          </a>
-          <a class="building-card" href="buildings.html#porsche">
-            <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1000&q=85" alt="Contemporary beachfront tower">
-            <div class="card-body"><span class="tag">Sunny Isles Beach</span><h3>Porsche Design Tower</h3><p>Iconic beachfront living with a private car elevator.</p></div>
-          </a>
-          <a class="building-card" href="buildings.html#st-regis">
-            <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1000&q=85" alt="Elegant luxury residence">
-            <div class="card-body"><span class="tag">Bal Harbour</span><h3>St. Regis Bal Harbour</h3><p>Resort service and elegant oceanfront residences.</p></div>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="properties">
-      <div class="container">
-        <div class="section-title">
-          <span class="eyebrow">Featured Listings</span>
-          <h2>Curated opportunities across South Florida.</h2>
-          <p>Sample listings are shown for design review and can later be replaced by an approved IDX feed.</p>
-        </div>
-        <div class="property-grid" id="featuredListings"></div>
-        <div id="homeResults" class="listing-results" aria-live="polite"></div>
-      </div>
-    </section>
-
-    <section class="section agent-intro">
-      <div class="container content-grid agent-profile">
-        <div class="agent-photo placeholder-photo" role="img" aria-label="Professional photograph placeholder for William Henderson">
-          <span>Add William’s<br>professional photo</span>
-        </div>
-        <div>
-          <span class="eyebrow">Meet Your Broker</span>
-          <h2>Personal guidance. Local market knowledge.</h2>
-          <p>William Henderson provides attentive representation for residential buyers and sellers, luxury rentals, investors and commercial clients throughout South Florida.</p>
-          <p>Every client receives direct communication, thoughtful strategy and hands-on guidance from the first conversation through closing.</p>
-          <div class="hero-actions dark-actions">
-            <a class="btn btn-primary" href="about.html">Meet William</a>
-            <a class="btn btn-outline-dark" href="contact.html">Schedule a Consultation</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta-band">
-      <div class="container content-grid">
-        <div>
-          <span class="eyebrow">Let’s Connect</span>
-          <h2>Receive properties selected for your goals.</h2>
-          <p>Tell us what you are looking for and William will follow up with relevant opportunities.</p>
-        </div>
-        <form class="lead-form form-grid" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-          <div class="field"><label>Name</label><input name="name" required></div>
-          <div class="field"><label>Email</label><input type="email" name="email" required></div>
-          <div class="field"><label>Phone</label><input type="tel" name="phone"></div>
-          <div class="field"><label>I am interested in</label>
-            <select name="interest"><option>Buying</option><option>Selling</option><option>Renting</option><option>Commercial Real Estate</option><option>Home Valuation</option></select>
-          </div>
-          <div class="field full"><label>Message</label><textarea name="message" rows="4"></textarea></div>
-          <div class="full"><button class="btn btn-primary" type="submit">Request Information</button></div>
-        </form>
+        <span class="eyebrow gold">Explore South Florida</span>
+        <h2>Distinctive communities.<br>Exceptional lifestyles.</h2>
+        <p>This section is intentionally left simple for now so the skyline hero can be finalized first.</p>
       </div>
     </section>
   </main>
 
-  <footer data-footer></footer>
   <script src="script.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      renderFeaturedListings();
-      runSearch('homeSearch', 'homeResults');
-    });
-  </script>
 </body>
 </html>
