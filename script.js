@@ -22,7 +22,7 @@ function injectLayout(){
     footer.innerHTML = `<div class="container">
       <div class="footer-grid">
         <div>
-          <h3>William Henderson Real Estate</h3>
+          <h3>William Henderson Broker</h3>
           <p>Luxury homes, rentals, investments and commercial real estate across South Florida.</p>
           <a class="footer-phone" href="tel:+17863465611">786-346-5611</a>
         </div>
@@ -35,7 +35,7 @@ function injectLayout(){
           <div class="footer-links"><a href="neighborhoods.html">Neighborhoods</a><a href="buildings.html">Luxury Buildings</a><a href="blog.html">Market Insights</a><a href="about.html">About William</a></div>
         </div>
       </div>
-      <p class="disclaimer">William Henderson Real Estate Broker. Property information shown on this demonstration website is illustrative and should be replaced with brokerage-approved data, disclosures, Equal Housing language and IDX attribution before public launch.</p>
+      <p class="disclaimer">William Henderson Broker. Property information shown on this demonstration website is illustrative and should be replaced with brokerage-approved data, disclosures, Equal Housing language and IDX attribution before public launch.</p>
     </div>`;
   }
 }
@@ -68,8 +68,9 @@ function runSearch(formId,resultsId,allowedType){
   form.addEventListener('submit',e=>{
     e.preventDefault();
     const data=new FormData(form),area=data.get('area'),type=data.get('type');
+    const minPrice=Number(data.get('minPrice'))||0;
     const maxPrice=Number(data.get('maxPrice'))||Infinity,beds=Number(data.get('beds'))||0;
-    const matches=sampleListings.filter(x=>(!allowedType||x.type===allowedType)&&(!area||x.area===area)&&(!type||x.type===type)&&x.price<=maxPrice&&x.beds>=beds);
+    const matches=sampleListings.filter(x=>(!allowedType||x.type===allowedType)&&(!area||x.area===area)&&(!type||x.type===type)&&x.price>=minPrice&&x.price<=maxPrice&&x.beds>=beds);
     results.innerHTML=matches.length?matches.map(listingCard).join(''):'<div class="empty-state">No sample properties match those filters. Live inventory will appear here after an IDX provider is connected.</div>';
     results.scrollIntoView({behavior:'smooth',block:'nearest'});
   });

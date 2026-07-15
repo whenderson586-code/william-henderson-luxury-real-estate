@@ -27,11 +27,11 @@ p{color:var(--muted)}
 .nav-links a{color:#fff;font-size:.82rem;opacity:.91}
 .nav-links a:hover,.nav-links a.active{color:var(--gold)}
 .menu-toggle{display:none;border:0;background:transparent;color:#fff;font-size:1.7rem}
-.hero{min-height:92vh;display:grid;align-items:center;position:relative;color:#fff;background:
+.hero{min-height:calc(100vh + 125px);display:grid;align-items:center;position:relative;color:#fff;background:
 linear-gradient(90deg,rgba(4,14,23,.9),rgba(4,14,23,.38)),
 url('assets/miami-skyline-hero.jpg') center/cover no-repeat}
 .hero:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(8,23,37,.18),transparent 45%);pointer-events:none}
-.hero-content{position:relative;z-index:1;padding-top:118px;padding-bottom:120px}
+.hero-content{position:relative;z-index:1;padding-top:140px;padding-bottom:150px}
 .hero h1{margin:14px 0 22px}
 .hero p{color:rgba(255,255,255,.84);font-size:1.08rem;max-width:760px}
 .hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
@@ -43,7 +43,7 @@ url('assets/miami-skyline-hero.jpg') center/cover no-repeat}
 .btn-dark{background:var(--navy);color:#fff;min-height:49px;align-self:end}
 .btn-outline-dark{border-color:var(--navy);color:var(--navy)}
 .search-panel{margin-top:-54px;position:relative;z-index:5;background:#fff;box-shadow:var(--shadow);border-radius:var(--radius);padding:25px}
-.search-grid{display:grid;grid-template-columns:1.45fr 1fr 1fr .8fr auto;gap:12px}
+.search-grid{display:grid;grid-template-columns:1.35fr .95fr .9fr .9fr .75fr auto;gap:12px}
 .field label{display:block;font-size:.76rem;font-weight:800;margin-bottom:6px;color:var(--navy)}
 .field input,.field select,.field textarea{width:100%;padding:13px 14px;border:1px solid var(--border);border-radius:10px;background:#fff}
 .area-grid,.property-grid,.building-grid,.service-grid,.agent-grid,.blog-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
@@ -99,7 +99,7 @@ url('assets/miami-skyline-hero.jpg') center/cover no-repeat}
   .city-directory{grid-template-columns:repeat(2,1fr)}
 }
 @media(max-width:680px){
-  .section{padding:64px 0}.hero{min-height:86vh}.hero-content{padding-top:120px}.search-panel{margin-top:-28px}
+  .section{padding:64px 0}.hero{min-height:760px}.hero-content{padding-top:120px}.search-panel{margin-top:-28px}
   .search-grid,.form-grid,.area-grid,.property-grid,.building-grid,.service-grid,.agent-grid,.blog-grid,.listing-results,.city-directory{grid-template-columns:1fr}
   .form-grid .full{grid-column:auto}.split-heading{display:block}.split-heading .text-link{display:inline-block;margin-top:12px}
   .footer-grid{grid-template-columns:1fr}.detail-card{grid-template-columns:1fr}.agent-photo{min-height:380px}
