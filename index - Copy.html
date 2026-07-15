@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="William Henderson Real Estate — luxury homes across South Florida.">
+  <title>William Henderson Real Estate | South Florida Luxury Homes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        William Henderson
+        <span>South Florida Real Estate</span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Open navigation">☰</button>
+
+      <nav class="nav-links">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="buyers.html">Buyers</a>
+        <a href="sellers.html">Sellers</a>
+        <a href="rentals.html">Rentals</a>
+        <a href="commercial.html">Commercial</a>
+        <a href="neighborhoods.html">Neighborhoods</a>
+        <a href="buildings.html">Luxury Buildings</a>
+        <a href="agents.html">Agents</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <span class="eyebrow">Miami-Dade · Broward · Palm Beach · Florida Keys</span>
+        <h1>Luxury Homes<br>Across South Florida.</h1>
+        <p>
+          Personal representation for buyers, sellers, investors, luxury renters
+          and commercial clients throughout South Florida's most desirable communities.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="#property-search">Search Properties</a>
+          <a class="btn btn-outline" href="sellers.html">What's My Home Worth?</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="search-wrap" id="property-search">
+      <div class="container">
+        <form class="search-panel" id="homeSearch">
+          <div class="field">
+            <label for="area">City / Neighborhood</label>
+            <select id="area">
+              <option>All South Florida</option>
+              <optgroup label="Miami-Dade">
+                <option>Miami Beach</option>
+                <option>South Beach</option>
+                <option>Brickell</option>
+                <option>Downtown Miami</option>
+                <option>Coconut Grove</option>
+                <option>Coral Gables</option>
+                <option>Edgewater</option>
+                <option>Key Biscayne</option>
+                <option>Sunny Isles Beach</option>
+                <option>Bal Harbour</option>
+                <option>Aventura</option>
+              </optgroup>
+              <optgroup label="Broward">
+                <option>Fort Lauderdale</option>
+                <option>Hollywood</option>
+                <option>Dania Beach</option>
+                <option>Hallandale Beach</option>
+                <option>Weston</option>
+              </optgroup>
+              <optgroup label="Palm Beach">
+                <option>Palm Beach</option>
+                <option>West Palm Beach</option>
+                <option>Boca Raton</option>
+                <option>Delray Beach</option>
+                <option>Jupiter</option>
+              </optgroup>
+              <optgroup label="Florida Keys">
+                <option>Key Largo</option>
+                <option>Islamorada</option>
+                <option>Marathon</option>
+                <option>Key West</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="type">Property Type</label>
+            <select id="type">
+              <option>All Types</option>
+              <option>Condo</option>
+              <option>Single Family</option>
+              <option>Townhome</option>
+              <option>Rental</option>
+              <option>Commercial</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="price">Max Price</label>
+            <select id="price">
+              <option>No Maximum</option>
+              <option>$500,000</option>
+              <option>$1,000,000</option>
+              <option>$2,500,000</option>
+              <option>$5,000,000</option>
+              <option>$10,000,000+</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="beds">Bedrooms</label>
+            <select id="beds">
+              <option>Any</option>
+              <option>1+</option>
+              <option>2+</option>
+              <option>3+</option>
+              <option>4+</option>
+              <option>5+</option>
+            </select>
+          </div>
+
+          <button class="search-button" type="submit">Search</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="communities">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow gold">Explore South Florida</span>
+            <h2>Distinctive communities.<br>Exceptional lifestyles.</h2>
+          </div>
+          <a href="neighborhoods.html">View all cities & neighborhoods →</a>
+        </div>
+
+        <div class="community-grid">
+          <a class="community-card miami" href="neighborhoods.html#miami-beach">
+            <div><h3>Miami Beach</h3><p>Iconic oceanfront living with world-class culture and dining.</p></div>
+          </a>
+          <a class="community-card brickell" href="neighborhoods.html#brickell">
+            <div><h3>Brickell</h3><p>The financial district of the Americas and a luxury urban lifestyle.</p></div>
+          </a>
+          <a class="community-card grove" href="neighborhoods.html#coconut-grove">
+            <div><h3>Coconut Grove</h3><p>A waterfront village atmosphere with lasting charm.</p></div>
+          </a>
+          <a class="community-card palm" href="neighborhoods.html#palm-beach">
+            <div><h3>Palm Beach</h3><p>Timeless elegance and prestigious oceanfront estates.</p></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="buildings-preview">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow gold">Signature Residences</span>
+            <h2>Featured Luxury Buildings.</h2>
+          </div>
+          <a href="buildings.html">Explore all buildings →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
