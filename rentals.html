@@ -740,7 +740,16 @@ main {
 <nav class="nav-links"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="buyers.html">Buyers</a><a href="sellers.html">Sellers</a><a class="active" href="rentals.html">Rentals</a><a href="commercial.html">Commercial</a><a href="neighborhoods.html">Neighborhoods</a><a href="luxury-buildings.html">Luxury Buildings</a><a href="agents.html">Agents</a><a href="blog.html">Blog</a><a href="contact.html">Contact Us</a></nav>
 </div>
 </header>
-<main>
+<main><section class="hero">
+<img alt="Miami Skyline" class="hero-image" src="assets/miami-skyline-hero.jpg"/>
+<div class="hero-overlay"></div>
+<div class="container hero-content">
+<span class="eyebrow">Miami • Broward • Palm Beach • Florida Keys</span>
+<h1>Rentals</h1>
+<p>Find luxury rentals and exclusive leasing opportunities throughout South Florida.</p>
+<div class="hero-actions"></div>
+</div>
+</section>
 <section class="section"><div class="container"><div class="section-title"><span class="eyebrow">Rental Search</span><h2>Explore available rentals.</h2></div><form class="panel search-grid" id="rentalSearch"><div class="field"><label>County</label><select name="area"><option value="">All Areas</option><option>Palm Beach</option><option>Broward</option><option>Miami-Dade</option><option>Monroe</option></select></div><input name="type" type="hidden" value="Rental"/><div class="field"><label>Maximum Monthly Rent</label><input name="maxPrice" placeholder="10000" type="number"/></div><div class="field"><label>Bedrooms</label><select><option>Any</option><option>1+</option><option>2+</option><option>3+</option></select></div><div class="field"><label>Move-in Date</label><input type="date"/></div><button class="btn btn-dark">Search Rentals</button></form><div class="listing-results" id="rentalResults"></div></div></section>
 </main>
 <div data-footer=""></div>
